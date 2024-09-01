@@ -1,3 +1,6 @@
+
+![Logo](./Images/narc.jpg)
+
 ## **Project Description**
 
 Narc alert is a platform dedicated to supporting survivors of
