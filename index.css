@@ -1,0 +1,822 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 10rem;
+  background-color: #1b1c1c;
+}
+
+header .logo img {
+  width: 43.42px;
+  height: 71.72px;
+  mix-blend-mode: exclusion;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-flex;
+  margin: 0px 15px;
+}
+
+header nav ul li a {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #ffffff;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+ 
+}
+
+.btn1 {
+  display: none;
+}
+
+.btn3 {
+  background-color: white;
+  color: #1b1c1c;
+  display: flex;
+  align-items: center;
+  border-radius: 27px;
+}
+
+header nav ul li a.active::after, header nav ul li a:hover:after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  background-color: white;
+  border: 2px solid #ffffff;
+  
+}
+
+#menu-bar {
+  font-size: 25px;
+  display: none;
+  color: white;
+}
+
+div.images {
+  display: flex;
+  width: 100%;
+}
+
+div.background {
+  height: 80vh;
+  position: relative;
+}
+
+div.background img {
+  width: 100%;
+  height: 87vh;
+}
+
+div.background:nth-child(1) {
+  flex: 1 1 7rem;
+}
+
+div.layer1 {
+  background: rgba(18, 16, 16, 0.51);
+  position: absolute;
+  top: 0%;
+  height: 87vh;
+  right: 0;
+  left: 0;
+}
+
+div.background:nth-child(2) {
+  flex: 1 1 20rem;
+}
+
+div.layer2 {
+  background: rgba(112, 1, 4, 0.46);
+  position: absolute;
+  top: 0%;
+  height: 87vh;
+  right: 0;
+  left: 0;
+}
+div.background:nth-child(3) {
+  flex: 1 1 35rem;
+}
+
+div.layer3 {
+  background: rgba(18, 16, 16, 0.51);
+  position: absolute;
+  top: 0%;
+  height: 87vh;
+  right: 0;
+  left: 0;
+}
+div.background:nth-child(4) {
+  flex: 1 1 20rem;
+}
+
+div.layer4 {
+  background: rgba(140, 142, 5, 0.46);
+  position: absolute;
+  top: 0%;
+  height: 87vh;
+  right: 0;
+  left: 0;
+}
+
+div.text {
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+div.text h1 {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0px 100px;
+}
+
+div.text p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0px 120px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+div.button {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+#quote{
+    margin-left: -770px;
+    
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-transform: lowercase;
+color: #FFFFFF;
+padding: 0px 900px;
+
+
+}
+
+section.mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10px 20px 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+div.about{
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.about h1{
+    font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+/* identical to box height */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #1B1C1C;
+}
+
+div.about p{
+    
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+margin-bottom: 40px;
+/* or 178% */
+
+text-align: center;
+text-transform: capitalize;
+
+/* Foundation /Grey/grey-500 */
+
+color: #1E1F1F;
+
+}
+
+div.mission-image{
+    flex: 1 1 30rem;
+    position: relative;
+
+}
+div.mission-image img{
+    width: 100%;
+
+}
+
+div.mission-text{
+    position: absolute;
+    top: 0;
+    padding: 30px 50px;
+}
+
+div.mission-text h1{
+    font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 33px;
+line-height: 44px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+margin-bottom: 250px;
+}
+
+div.mission-text p{
+    font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+div.about{
+    flex: 1 1 30rem;
+    align-items: flex-start;
+
+}
+
+section.abuse{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10px 20px 100px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+div.abuse-text{
+  flex: 1 1 30rem;
+}
+
+div.abuse-text h1{
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+margin-bottom: 20px;
+/* identical to box height */
+
+
+text-transform: capitalize;
+
+color: #1B1C1C;
+
+}
+
+div.abuse-text p{
+  
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.p1{
+  margin-bottom: 30px;
+}
+
+div.abuse-image{
+  flex: 1 1 10rem;
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+div.abuse-image img{
+  width: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+ 
+}
+
+div.abuse-about{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(2, 61, 8, 0.44);
+  bottom: 2%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+div.abuse-about p{
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+margin-left: 40px;
+/* or 129% */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+margin-top: 60px;
+}
+
+section.goals{
+  margin-top: 100px;
+}
+
+div.goal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  position: relative;
+
+}
+
+div.goal h2{
+  flex: 1 1 30rem;
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 59px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #000000;
+
+}
+
+div.goal .goal-image{
+  flex: 1 1 30rem;
+
+
+
+}
+
+
+
+div.goal3 .goal-image img{
+  width: 50%;
+  border-radius: 200px;
+  height: 120px;
+  margin-right: -300px;
+}
+
+div.goal1 .goal-image img, div.goal2 .goal-image img{
+  width: 65%;
+  border-radius: 200px;
+  height: 120px;
+}
+
+div.goal1::after{
+  content: "";
+  height: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 67.5%;
+  left: 0%;
+  border-radius: 100px;
+  background: rgba(109, 5, 10, 0.48);
+}
+div.goal3::after{
+  content: "";
+  height: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 75%;
+  left: 0;
+  border-radius: 100px;
+  background: rgba(1, 15, 50, 0.5);
+}
+
+div.goal2, div.goal3{
+  position: relative;
+}
+
+div.goal2::after{
+  content: "";
+  height: 120px;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right: 17.5%;
+  left: 50%;
+  border-radius: 100px;
+  background: rgba(153, 155, 5, 0.47);
+}
+
+.under{
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+
+/* or 178% */
+
+
+/* Foundation /Grey/grey-500 */
+
+color: #1E1F1F;
+margin: 40px 150px 0px 135px;
+
+}
+
+div.last h1{
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #1B1C1C;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+
+div.last p{
+  font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+margin-bottom: 40px;
+padding: 0px 150px;
+text-align: justify;
+/* or 178% */
+
+text-transform: capitalize;
+
+color: #000000;
+}
+
+div.last{
+  padding-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+  header {
+    padding: 2px 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding: 2px 2rem;
+    z-index: 1000;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  header .links {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    padding-left: 40px;
+    z-index: 1;
+    height: 60vh;
+    text-align: center;
+    background: rgba(27, 28, 28, 0.76);
+    transition: top 0.9s ease-in-out;
+  }
+
+  header .links.active {
+    top: 13%;
+  }
+
+  header .links ul li {
+    display: block;
+    margin: 2.5rem 0px;
+  }
+
+  .btn1 {
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .btn4 {
+    display: none;
+  }
+
+  div.background:nth-child(1) {
+    flex: 1 1 5rem;
+  }
+  div.background:nth-child(2) {
+    flex: 1 1 15rem;
+  }
+  div.background:nth-child(4) {
+    flex: 1 1 15rem;
+  }
+  div.background img {
+    width: 100%;
+    height: 80vh;
+  }
+
+  div.layer {
+    height: 80vh;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  header .links {
+    height: 60.5vh;
+  }
+
+  header .links.active {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  div.text h1 {
+    padding: 0px 20px;
+  }
+  div.text p {
+    padding: 0px 20px;
+  }
+
+  #quote{
+    display: none;
+  }
+
+  section.abuse{
+    padding: 100px 10px 20px 50px;
+  }
+  div.abuse-about p{
+    margin-top: 30px;
+  }
+  section.goals{
+    margin-top: 300px;
+  }
+  
+  div.goal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    position: relative;
+  
+  }
+
+  div.goal h2{
+    font-size: 35px;
+  }
+
+  .under{
+    margin: 40px 150px 0px 60px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  div.text {
+    margin-top: 50px;
+  }
+
+  div.text h1 {
+    font-size: 30px;
+  }
+  div.text p {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  section.mission{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 100px 10px 20px 20px;
+    gap: 0px;
+  }
+
+  .mission-image{
+    margin-top: 40px;
+  }
+
+  div.goal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    position: relative;
+  
+  }
+
+  div.goal h2{
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .under{
+    margin: 40px 50px 0px 5px;
+  }
+
+  section.abuse{
+    padding: 100px 0px 20px 20px;
+  }
+  div.abuse-text h1{
+    text-align: center;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 590px) {
+  div.text {
+    margin-top: 40px;
+  }
+
+  div.text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  div.text p {
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+
+  div.last p{
+    padding: 0px 0px;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 360px) {
+  div.text {
+    margin-top: 0px;
+  }
+
+  div.text h1 {
+    font-size: 30px;
+    line-height: 32px;
+    padding: 0 7px;
+  }
+  div.text p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    padding: 0 7px;
+  }
+
+  div.background img {
+    width: 100%;
+    height: 60vh;
+  }
+  div.layer{
+    height: 60vh;
+  }
+
+  div.mission-text{
+    position: absolute;
+    top: 0;
+    padding: 10px 30px;
+}
+
+div.goal h2{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.under{
+  margin: 40px 10px 50px 15px;
+}
+header .links.active {
+  top: 10%;
+}
+}
+
+@media screen and (max-width: 1080px) {
+    div.mission-image{
+        flex: 1 1 20rem;
+        position: relative;
+    
+    }
+
+    section.abuse{
+      display: block;
+    }
+
+    div.abuse-image{
+      width: 300px;
+      margin-top: 20px;
+      float: right;
+    }
+
+    div.last p{
+      padding: 0px 20px;
+    }
+    div.last h1{
+      font-size: 40px;
+    }
+    div.abuse-text h1{
+      font-size: 40px;
+    }
+  }
